@@ -1,4 +1,4 @@
- import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from time import sleep
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
@@ -43,14 +43,18 @@ def SetAngle3(angle):
     pwm3.ChangeDutyCycle(0)
     
 SetAngle2(25)
-SetAngle1(10)
-SetAngle(60)
-SetAngle2(200)
-SetAngle3(50)
+SetAngle(140)
+SetAngle3(30)
+SetAngle2(0)
+SetAngle3(0)
+SetAngle2(20)
+SetAngle(30)
+SetAngle2(5)
+SetAngle3(40)
 SetAngle2(25)
-SetAngle(0)
-SetAngle2(200)
-SetAngle3(20)
+SetAngle3(0)
+SetAngle(80)
+SetAngle2(5)
 pwm.stop()
 pwm1.stop()
 pwm2.stop()
